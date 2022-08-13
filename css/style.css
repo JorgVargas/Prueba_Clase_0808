@@ -1,0 +1,116 @@
+.ancho{
+    width: 100%;
+    height: 34px;
+}
+.espacio{
+    padding: 0 5%;
+    align-items: center;
+}
+.contenedor-flex{
+    display: flex;
+}
+#barra-logo{
+    margin-top: 68;
+    height: 150px !important;
+}
+
+.laterales{
+    justify-content: space-between;
+}
+.logo-sena{
+    max-width: 115px;
+}
+.logo-gov{
+    max-width: 20px;
+}
+
+
+#barra-gris{
+    background-color:#efefefc7;
+    position: fixed;
+    z-index: -1;
+    
+}
+#barra-azul{
+    position: relative;
+    background-color:#015dca;
+    top: 34px;
+}
+
+body{
+    margin: 0;
+}
+
+.grid-mind{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+
+    grid-template-areas: "fecha inicio"
+                          "min min"
+                          "bus bus";
+}
+
+.item-fecha{
+    grid-area: fecha;
+
+}
+
+.item-inicio{
+    grid-area: inicio;
+}
+.item-buscar{
+    grid-area: bus;
+}
+
+.item-min{
+    grid-area: min;
+}
+
+/* Estilos para el menu */
+
+nav ul li{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #efefefc7;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #575756;
+    padding: 10px;
+    text-transform: capitalize;
+    border-right: 1px solid #ff6b00;
+}
+
+nav ul li a:hover{
+    background-color: gray;
+    
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 0;
+
+}
+nav ul li:hover> ul{
+    display: block;
+}
+
+
+
+
